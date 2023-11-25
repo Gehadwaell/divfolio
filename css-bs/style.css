@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+}
+.nav-color{
+    background-color: rgba(0, 0, 0, 0.821);
+}
+#home{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../hero-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: auto;
+
+
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .navbar-nav {
+    margin-left: auto; 
+  }
+  
+#home .li-edit{
+    position: relative;
+
+}
+.li-edit::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color:white;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease; 
+}
+.li-edit:hover::after{
+    transform: scaleX(1);
+}
+#home .container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#home .container .content{
+    padding: 20px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 86px;
+    color:#ffff;
+}
+.text-slider-items {
+    display: none;
+}
+#about{
+    overflow: auto;
+    background-color: #F5F5F5;
+}
+#about .box-shadow-full{
+    margin-top: 48px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+#about .image img{
+border: 0px solid;
+border-radius: 4px;
+}
+#about .title-s{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #1e1e1e;
+}
+#about .info-text{
+    color:
+    #4e4e4e;
+}
+#about .box-shadow-full .title{
+    position: relative;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #1e1e1e;
+    padding-bottom: 10px;
+}
+.box-shadow-full .title::after{
+    content: "";
+    position: absolute;
+    width: 17%;
+    height: 3px;
+    background-color:#0078FF;
+    bottom:0;
+    left: 0;
+}
+#about .box-shadow-full .about-content{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 300;
+    line-height: 30px;
+    color: #4e4e4e;
+}
+#services{
+    overflow: auto;
+    background-color: #F5F5F5;
+}
+.service-box{
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+ .title-box{
+    
+    text-align: center;
+}
+ .title-box h3{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #1e1e1e;
+}
+ .title-box p{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4e4e4e;
+}
+.line{
+    height: 5px;
+    background-color: #0078FF;
+    width: 40px;
+    margin: 0 auto;
+    overflow: auto
+}
+.service-icon .icon-circle{
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+
+}
+.service-box .ico-circle i {
+    line-height: 0;
+    font-size: 40px;
+}
+.service-icon .icon-circle:hover{
+    background-color: #0078FF;
+    box-shadow: 0 0 0 10px #d5e0f0;
+    color: #fff;
+
+}
+.service-content .title{
+font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+font-size: 22px;
+font-weight: 500;
+line-height: 27px;
+color: #1e1e1e;
+}
+#work{
+    overflow: auto;
+    background-color: #F5F5F5;
+}
+
+.work-img {
+    
+    display: block;
+    overflow: hidden;
+    
+}
+.work-img img{
+    transition: transform 0.8s ease;
+}
+.work-img img:hover{
+    transform: scale(1.2);
+cursor: pointer;
+}
+.work-icon{
+   
+    width: fit-content;
+    margin-left: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 3px #0078ff;
+}
+.work-icon i{
+    color: #0078FF;
+}
+.work-icon:hover{
+    cursor: pointer;
+}
+.work-title{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1e1e1e;
+}
+.work-more{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #4e4e4e;
+}
+.w-category{
+    color: #0078FF;
+}
+#blog{
+    overflow: auto;
+    background-color: #F5F5F5; 
+}
+.card-category-box{
+    border-radius:5px;
+    margin: auto;
+    margin-top: -25px;
+    padding-top: 5px;
+    padding-bottom:1px;
+    padding-inline:15px ;
+    background-color: #0078FF;
+    width: fit-content;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+.card-category h3{
+    font-size: 11px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 13px;
+}
+
+#blog .blog-author{
+    display: inline-block;
+}
+#blog .blog-author img{
+    width: 30px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+#blog .blog-author:hover{
+    color: #0078FF;
+    cursor: pointer;
+}
+#blog .blog-date{
+display:inline-block;
+float: right;
+}
+#blog .card-body .title{
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+#blog .card-body .title:hover{
+    color: #0078FF;
+    cursor: pointer;
+}
+#contact{
+    background-image:linear-gradient(rgba(38,119,220,0.8),rgba(38,119,220,0.8)), url(/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+.title-box-2 h5{
+    position: relative;
+font-weight: 500;
+font-size: 32px;
+line-height: 38px;
+padding-bottom: 10px;
+}
+.title-box-2 h5::after{
+    content: "";
+    position: absolute;
+    width: 17%;
+    height: 3px;
+    background-color:#0078FF;
+    bottom:0;
+    left: 0;
+
+}
+#contact .button{
+    padding: 10px;
+    border: 0px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color: #0078FF;
+    color: #fff;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+}
+#contact .button:hover{
+    background-color: #5ea5f6;
+    box-shadow: 0 0 0 5px #d5e0f0;
+
+}
+.contact-content{
+    font-size:20px ;
+    font-weight:300 ;
+    line-height:30px;
+    color: #4e4e4e;
+}
+#contact .list-ico{
+    list-style: none;
+}
+#contact .list-ico i{
+    width: 30px;
+    color: #0078FF;
+    padding-right:15px;
+}
+.icon-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.ico-circle{
+    width: fit-content;
+    margin-left: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 3px #0078ff;
+}
+.ico-circle:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 3px #80b7f6;
+    background-color: #0078FF;
+    color: #fff;
+
+}
+
+.icon-list li{
+    margin-right: 20px;
+}
+.icon-list li i{
+    width: 30px;
+    font-size: 20px;
+}
+.footer{
+    background-color: #015fcb;
+}
+.footer .container{
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+.credits a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
